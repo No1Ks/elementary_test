@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  elementary:
+    dependency: "direct main"
+    description:
+      name: elementary
+      sha256: "7333fcb730f1097f57341091b285f8ae9a74e644139982a37cc66a3b243ae4b6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.1"
   fake_async:
     dependency: transitive
     description:
@@ -186,3 +194,4 @@ packages:
     version: "0.1.4-beta"
 sdks:
   dart: ">=3.1.0 <4.0.0"
+  flutter: ">=3.10.0"
