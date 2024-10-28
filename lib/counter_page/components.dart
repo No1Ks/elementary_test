@@ -1,4 +1,4 @@
-part of 'home_page.dart';
+part of 'counter_page.dart';
 
 class _IncrementButton extends StatelessWidget {
   final IconData iconData;

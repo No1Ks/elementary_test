@@ -1,18 +1,19 @@
-part of 'home_page.dart';
+part of 'counter_page.dart';
 
-TestPageWidgetModel testPageWidgetModelFactory(BuildContext context) {
-  return TestPageWidgetModel(TestPageModel());
+CounterPageWidgetModel counterPageWidgetModelFactory(BuildContext context) {
+  return CounterPageWidgetModel(CounterPageModel());
 }
 
-class TestPageWidgetModel extends WidgetModel<HomePage, TestPageModel> {
+class CounterPageWidgetModel extends WidgetModel<CounterPage, CounterPageModel> {
   late ValueNotifier<String> _valueController;
+
   late final _calculatingController = ValueNotifier<bool>(false);
 
   ValueListenable<String> get valueState => _valueController;
 
   ValueListenable<bool> get calculatingState => _calculatingController;
 
-  TestPageWidgetModel(TestPageModel model) : super(model);
+  CounterPageWidgetModel(CounterPageModel model) : super(model);
 
   Future<void> increment() async {
     _calculatingController.value = true;

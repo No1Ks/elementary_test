@@ -6,17 +6,17 @@ part 'components.dart';
 part 'model.dart';
 part 'widget_model.dart';
 
-class HomePage extends ElementaryWidget<TestPageWidgetModel> {
-  const HomePage({
+class CounterPage extends ElementaryWidget<CounterPageWidgetModel> {
+  const CounterPage({
     Key? key,
-    WidgetModelFactory wmFactory = testPageWidgetModelFactory,
+    WidgetModelFactory wmFactory = counterPageWidgetModelFactory,
   }) : super(wmFactory, key: key);
 
   @override
-  Widget build(TestPageWidgetModel wm) {
+  Widget build(CounterPageWidgetModel wm) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Elementary Test'),
+        title: const Text('Counter Elementary Test '),
       ),
       body: Center(
         child: Column(

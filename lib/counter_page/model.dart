@@ -1,11 +1,11 @@
-part of 'home_page.dart';
+part of 'counter_page.dart';
 
-class TestPageModel extends ElementaryModel {
+class CounterPageModel extends ElementaryModel {
   var _value = 0;
 
   int get value => _value;
 
-  TestPageModel();
+  CounterPageModel();
 
   Future<int> increment() async {
     // In academic purpose emulate a process that takes some time.
