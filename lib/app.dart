@@ -1,4 +1,4 @@
-import 'package:elementary_test/counter_page/counter_page.dart';
+import 'package:elementary_test/main_screen/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -13,7 +13,7 @@ class App extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CounterPage(),
+      home: const MainScreen(),
     );
   }
 }
